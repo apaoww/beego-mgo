@@ -7,11 +7,11 @@ package routes
 
 import (
 	"github.com/astaxie/beego"
-	"github.com/goinggo/beego-mgo/controllers"
+	"github.com/apaoww/beego-mgo/controllers"
 )
 
 func init() {
 	beego.Router("/", new(controllers.BuoyController), "get:Index")
-	beego.Router("/buoy/retrievestation", new(controllers.BuoyController), "post:RetrieveStation")
+	beego.Router("/buoy/retrievestation", new(controllers.BuoyController), "get,post:RetrieveStation")
 	beego.Router("/buoy/station/:stationId", new(controllers.BuoyController), "get,post:RetrieveStationJSON")
 }

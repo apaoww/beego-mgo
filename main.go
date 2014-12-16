@@ -8,7 +8,7 @@ package main
 import (
 	"github.com/astaxie/beego"
 	"github.com/goinggo/beego-mgo/localize"
-	_ "github.com/goinggo/beego-mgo/routes"
+	_ "github.com/apaoww/beego-mgo/routes"
 	"github.com/goinggo/beego-mgo/utilities/helper"
 	"github.com/goinggo/beego-mgo/utilities/mongo"
 	"github.com/goinggo/tracelog"
